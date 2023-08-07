@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.MainViewController">
+   <children>
+      <TextField fx:id="latTextField" focusTraversable="false" layoutX="15.0" layoutY="208.0" prefHeight="39.0" prefWidth="204.0" promptText="Input Latitude">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lngTextField" focusTraversable="false" layoutX="383.0" layoutY="208.0" prefHeight="39.0" prefWidth="204.0" promptText="Input Longitude">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="174.0" prefHeight="28.0" prefWidth="161.0" text="Latitude" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="404.0" layoutY="174.0" prefHeight="28.0" prefWidth="161.0" text="Longitude" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="30.0" prefHeight="58.0" prefWidth="481.0" text="Enter Coordinates Below to View the location's &#10;Elevation Compared to Sea Level!&#10;" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="353.0" prefHeight="39.0" prefWidth="161.0" text="(44.411422, -79.666702)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" layoutY="345.0" prefHeight="19.0" prefWidth="63.0" text="&quot;Longitude&quot;" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="346.0" prefHeight="19.0" prefWidth="63.0" text="&quot;Latitude&quot;" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" layoutX="197.0" layoutY="263.0" mnemonicParsing="false" onAction="#subCoordinates" prefHeight="50.0" prefWidth="204.0" text="Submit">
+         <font>
+            <Font name="Microsoft PhagsPa" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="318.0" prefHeight="28.0" prefWidth="79.0" text="Example:" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="107.0" prefHeight="39.0" prefWidth="179.0" text="The Elevation of Your Location is:" textAlignment="CENTER" />
+      <Label fx:id="results" alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="138.0" prefHeight="50.0" prefWidth="179.0" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#switchBtn" prefHeight="25.0" prefWidth="61.0" text="Switch">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
